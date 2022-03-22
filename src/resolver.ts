@@ -126,7 +126,9 @@ function zod<Schema extends ZodTypeAny, InputType = zInput<Schema>, OutputType =
     : (input: InputType): Promise<OutputType> => schema.parseAsync(input);
 }
 
-export const resolver = {
+const resolver = {
   pipe,
   zod,
 };
+
+export default resolver;

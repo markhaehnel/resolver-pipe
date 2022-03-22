@@ -1,6 +1,6 @@
 .idea/*
 .nyc_output
-build
+dist/
 node_modules
 test
 src/**.js
@@ -11,3 +11,5 @@ yarn.lock
 .vscode/*
 !.vscode/
 !.vscode/extensions.json
+
+.DS_Store

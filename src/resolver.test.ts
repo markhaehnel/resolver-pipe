@@ -1,7 +1,7 @@
 import { describe, expect, test } from "vitest";
 import * as z from "zod";
 import { ZodError } from "zod";
-import { resolver } from "./resolver";
+import resolver from "./resolver";
 
 describe.concurrent("resolver", () => {
   test("pipe with synchronous functions", async () => {

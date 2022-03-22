@@ -7,9 +7,13 @@
     "url": "https://github.com/markhaehnel/resolver-pipe/issues"
   },
   "homepage": "https://github.com/markhaehnel/resolver-pipe#readme",
-  "main": "build/main/index.js",
-  "typings": "build/main/index.d.ts",
-  "module": "build/module/index.js",
+  "main": "dist/cjs/resolver.js",
+  "types": "dist/cjs/resolver.d.ts",
+  "module": "dist/mjs/resolver.mjs",
+  "exports": {
+    "import": "./dist/mjs/resolver.mjs",
+    "require": "./dist/cjs/resolver.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/markhaehnel/resolver-pipe.git"
@@ -20,7 +24,7 @@
     "pipe"
   ],
   "scripts": {
-    "build": "rm -rf build/ && tsc",
+    "build": "rm -fr dist/* && tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json && find ./dist/mjs/ -name '*.js' -exec bash -c 'mv \"$1\" \"${1%.js}\".mjs' - '{}' \\;",
     "lint": "eslint src --ext .ts",
     "test": "vitest run",
     "test:watch": "vitest run",
@@ -61,7 +65,7 @@
     "vitest": "0.7.7"
   },
   "files": [
-    "build",
+    "dist",
     "!**/*.test.*",
     "!**/*.json",
     "LICENSE",
