@@ -30,7 +30,7 @@ const myPipe = resolver.pipe(
   (id: number) => `/article/${id}`
 );
 
-await myPipe(1, 3); // => "/article/2"
+await myPipe(1, 3); // => "/article/4"
 ```
 
 ### With validation
