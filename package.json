@@ -1,7 +1,7 @@
 {
   "name": "@markhaehnel/resolver-pipe",
   "description": "A simple pipe with validation",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Mark Hähnel (https://markhaehnel.de/)",
   "bugs": {
     "url": "https://github.com/markhaehnel/resolver-pipe/issues"

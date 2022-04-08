@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/markhaehnel/resolver-pipe/compare/v1.1.1...v1.1.2) (2022-04-08)
+
+### Bug Fixes
+
+- export package.json required by react-native and bundlers ([7d4bfbe](https://github.com/markhaehnel/resolver-pipe/commit/7d4bfbef44836accd656cf1cf8817b8ca5d6ede4))
+
 ### [1.1.1](https://github.com/markhaehnel/resolver-pipe/compare/v1.1.0...v1.1.1) (2022-04-01)
 
 ## [1.1.0](https://github.com/markhaehnel/resolver-pipe/compare/v1.0.0...v1.1.0) (2022-03-23)
