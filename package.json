@@ -11,8 +11,11 @@
   "types": "dist/cjs/resolver.d.ts",
   "module": "dist/mjs/resolver.mjs",
   "exports": {
-    "import": "./dist/mjs/resolver.mjs",
-    "require": "./dist/cjs/resolver.js"
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/mjs/resolver.mjs",
+      "require": "./dist/cjs/resolver.js"
+    }
   },
   "repository": {
     "type": "git",
